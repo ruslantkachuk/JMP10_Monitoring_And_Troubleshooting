@@ -3,6 +3,7 @@ Monitoring and troubleshooting
 
 #### Deadlock
 The simplest way to create a deadlock is to call the join method of the thread on itself:
+    
     Thread.currentThread().join();
     
 To find the deadlock, you can use the program visualVM. As a result, after receiving the dump, you can see the following: 
